@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="preload" href="https://creative-tool.oss-cn-shenzhen.aliyuncs.com/font/SourceHanSansCN-Light.otf
+  " as="font" crossorigin="crossorigin">
   <!-- 使用CDN加速的CSS文件，配置在vue.config.js下 -->
   <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
     <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style" />
     <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet" />
     <% } %>
-      <title>H5-Template-Vue</title>
+      <title>打桩营地</title>
+      <style>
+        html,
+        body {
+          background-color: #f4f4f4;
+        }
+      </style>
 </head>
 
 <body>

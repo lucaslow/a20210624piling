@@ -1,7 +1,8 @@
 // 按需全局引入 vant组件
 import Vue from 'vue'
-import { Button, List, Cell, Tabbar, TabbarItem } from 'vant'
-Vue.use(Button)
-Vue.use(Cell)
-Vue.use(List)
-Vue.use(Tabbar).use(TabbarItem)
+import { Field, Toast, Button, Progress, Uploader } from 'vant'
+Vue.use(Field)
+  .use(Toast)
+  .use(Button)
+  .use(Progress)
+  .use(Uploader)

@@ -9,7 +9,7 @@ const externals = {
   // 'vue-router': 'VueRouter',
   // vuex: 'Vuex',
   // axios: 'axios',
-  // vant: 'vant',
+  // vant: 'vant'
 }
 
 const cdn = {
@@ -22,16 +22,16 @@ const cdn = {
   },
   /* 生产环境 */
   build: {
-    css: ['https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css'],
-    js: [
-      'https://cdn.jsdelivr.net/npm/vue',
-      'https://unpkg.com/vue-router/dist/vue-router.js',
-      'https://unpkg.com/vuex',
-      'https://unpkg.com/axios/dist/axios.min.js',
-      'https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js'
-      //   'https://momentjs.com/downloads/moment.js',
-      //   'https://cdn.jsdelivr.net/npm/ant-design-vue@1.7.2/dist/antd.min.js'
-    ]
+    // css: ['https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css'],
+    // js: [
+    //   'https://cdn.jsdelivr.net/npm/vue',
+    //   'https://unpkg.com/vue-router/dist/vue-router.js',
+    //   'https://unpkg.com/vuex',
+    //   'https://unpkg.com/axios/dist/axios.min.js',
+    //   'https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js'
+    //   //   'https://momentjs.com/downloads/moment.js',
+    //   //   'https://cdn.jsdelivr.net/npm/ant-design-vue@1.7.2/dist/antd.min.js'
+    // ]
   }
 }
 
@@ -68,6 +68,7 @@ module.exports = {
       .set('store', '@/store')
       .set('router', '@/router')
       .set('plugins', '@/plugins')
+      .set('utils', '@/utils')
 
     //  去掉打包代码压缩
     // config.optimization.minimize(false)
